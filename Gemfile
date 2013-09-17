@@ -40,3 +40,4 @@ gem 'jquery-rails'
 
 gem 'rspec', '2.14.1'
 gem 'rspec-rails', '2.14.0'
+gem 'webrat', '0.7.3'
