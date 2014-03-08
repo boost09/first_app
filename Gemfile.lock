@@ -131,7 +131,7 @@ DEPENDENCIES
   json
   rails (= 3.2.6)
   rspec (= 2.14.1)
-  rspec-rails (= 2.14.0)
+  rspec-rails (>= 2.0.0.beta)
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

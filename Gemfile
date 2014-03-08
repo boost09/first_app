@@ -39,5 +39,9 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem 'rspec', '2.14.1'
-gem 'rspec-rails', '2.14.0'
+# gem 'rspec-rails', '2.14.0'
 gem 'webrat', '0.7.3'
+
+group :development, :test do
+  gem 'rspec-rails',      ">= 2.0.0.beta"
+end
