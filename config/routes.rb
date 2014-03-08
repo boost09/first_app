@@ -1,4 +1,7 @@
 FirstApp::Application.routes.draw do
+
+  root to: 'pages#home'
+
   get "users/new"
 
   get "pages/about"
@@ -17,10 +20,10 @@ FirstApp::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   match "contact", :to => "pages#contact"
-  match "/about",   :to => "pages#about"
-  match "/help",    :to => "pages#help"
+  match "about",   :to => "pages#about"
+  match "help",    :to => "pages#help"
+  match "signup",    :to => "users#new"
 
-  root :to => "pages#home"
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
