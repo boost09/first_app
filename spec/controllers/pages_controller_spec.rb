@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe PagesController do
-  integrate_views
+  render_views 
 
   before(:each) do
     @base_title = "jay compton"
