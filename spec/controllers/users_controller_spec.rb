@@ -10,8 +10,8 @@ describe UsersController do
     end
 
   it "should have the right title" do
-    get 'signup'
-    response.should contain("title", /Sign up/)
+    get 'new'
+    response.should contain("Sign up")
   end
 
   end
