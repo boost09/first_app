@@ -27,7 +27,7 @@ it "should require a name" do
 end
 
 it "should require an email address" do
-  no_email user = User.new(@attr.merge(:email => ""))
+  no_email_user = User.new(@attr.merge(:email => ""))
   no_email_user.should_not be_valid
 end
 
