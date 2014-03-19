@@ -46,7 +46,7 @@ it "should accept valid email addresses" do
 end
 
 it "should reject invalid email addresses" do
-  addresses = %w[user@foo.org user_name@bar.org haw.hee@foo.bar.org]
+  addresses = %w[user@fu,org user_name.bar haw.hee@fubar.]
   addresses.each do |address|
     invalid_email_user = User.new(@attr.merge(:email => address))
     invalid_email_user.should_not be_valid
