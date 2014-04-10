@@ -1,28 +1,27 @@
 FirstApp::Application.routes.draw do
-
-  resources :users
-
-  root to: 'pages#home'
-
-  get "pages/about"
-  get "pages/home"
-  get "pages/contact"
-  get "pages/help"
-  get "users/new"
-  get "users/show"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
-
+   resources :users
+ 
+   root to: 'pages#home'
+ 
+   get "pages/about"
+   get "pages/home"
+   get "pages/contact"
+   get "pages/help"
+   get "users/new"
+  get "users/show"
+  
   match "contact", :to => "pages#contact"
   match "about",   :to => "pages#about"
   match "help",    :to => "pages#help"
   match "signup",  :to => "users#new"
   match "users",   :to => "users#show"
+
+  # Sample of regular route:
+  #   match 'products/:id' => 'catalog#view'
+  # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
@@ -73,5 +72,4 @@ FirstApp::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-
 end
